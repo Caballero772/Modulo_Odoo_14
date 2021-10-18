@@ -1,0 +1,40 @@
+<odoo>
+    <record id="estate_property_offer_view_tree" model="ir.ui.view">
+        <field name="name">estate.property.offer.tree</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+
+            <tree string="Channel">
+                <field name="price"/>
+                <field name="partner_id"/>
+                <field name="vality"/>
+                <field name="date_deadline"/>
+                <button name="action_accept_offer"  type="object" icon="fa-check"/>
+                <button name="action_reject_offer"  type="object" icon="fa-times"/>
+                <field name="status"/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="estate_property_offer_view_form" model="ir.ui.view">
+        <field name="name">estate.property.offer.form</field>
+        <field name="model">estate.property.offer</field>
+        <field name="arch" type="xml">
+            <form string="Create offer">
+                <sheet>
+                    <group>
+                        <field name="price"/>
+                        <field name="partner_id"/>
+                        <field name="vality"/>
+                        <field name="date_deadline"/>
+                        <!-- <button name="action_accept_offer"  type="object" icon="fa-check"/>
+                        <button name="action_reject_offer"  type="object" icon="fa-times"/> -->
+                        <field name="status"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

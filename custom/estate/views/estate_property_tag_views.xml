@@ -1,0 +1,28 @@
+<odoo>
+    <record id="estate_property_tag_action" model="ir.actions.act_window">
+        <field name="name">Etiqueda de Propiedad</field>
+        <field name="res_model">estate.property.tag</field>
+        <field name="view_mode">tree,form</field>
+        <!--<field name="help" type="html">
+            <p class="o_view_nocontent_smilling_face">
+                Ingrese una nueva propiedad
+            </p><p>
+                Cree una nueva publicacion para que los demas puedan verla
+            </p>
+        </field>-->
+    </record>
+
+    <record id="estate_property_tag_view_form" model="ir.ui.view">
+        <field name="name">estate.property.tag.form</field>
+        <field name="model">estate.property.tag</field>
+        <field name="arch" type="xml">
+            <form string="Tag Property">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record> 
+</odoo>
